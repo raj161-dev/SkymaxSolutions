@@ -10,7 +10,7 @@ PREVIEW
 
 PAGES
 - index.html — Homepage
-- workday.html — Workday-focused services
+- enterprise-solutions.html — Workday-focused enterprise solutions
 - services.html — Enterprise technology services
 - about.html — Company profile
 - careers.html — Talent / careers
