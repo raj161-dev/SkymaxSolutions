@@ -663,7 +663,10 @@ ul, ol { padding: 0; list-style: none; }
 }
 .contact-detail:first-child { border-top: none; }
 .contact-detail strong { display: block; font-size: 14px; font-weight: 700; }
-.contact-detail span { display: block; color: var(--muted); font-size: 13px; margin-top: 5px; }
+.contact-detail span,
+.contact-detail a { display: block; color: var(--muted); font-size: 13px; margin-top: 5px; line-height: 1.7; }
+.contact-detail a { width: fit-content; transition: color .2s; }
+.contact-detail a:hover { color: var(--blue); }
 .form-card {
   background: #fff; border: 1px solid #deeaf8;
   border-radius: var(--radius-lg); padding: 38px;
@@ -752,6 +755,14 @@ ul, ol { padding: 0; list-style: none; }
   font-size: 14px; color: rgba(255,255,255,.45); line-height: 1.8;
   max-width: 270px; margin-top: 22px;
 }
+.footer-contact { display: grid; gap: 8px; max-width: 285px; margin-top: 22px; }
+.footer-contact a,
+.footer-contact address {
+  color: rgba(255,255,255,.55); font-size: 12px; line-height: 1.65;
+  font-style: normal; overflow-wrap: anywhere;
+}
+.footer-contact a { width: fit-content; transition: color .2s; }
+.footer-contact a:hover { color: #fff; }
 .footer-col h4 {
   font-size: 11px; font-weight: 800; letter-spacing: .18em;
   text-transform: uppercase; color: rgba(255,255,255,.4);
@@ -770,8 +781,6 @@ ul, ol { padding: 0; list-style: none; }
   justify-content: space-between; gap: 14px;
   font-size: 12px; color: rgba(255,255,255,.35);
 }
-.footer-disclaimer { font-size: 11px; color: rgba(255,255,255,.25); margin-top: 14px; }
-
 /* ── PRIVACY / PROSE ───────────────────────────────────── */
 .prose { max-width: 760px; }
 .prose h2 { font-size: 28px; margin-bottom: 18px; }
